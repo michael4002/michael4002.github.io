@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<link href="../style/stylekontakt.css" rel="stylesheet" type="text/css">
+		<link href="../img/favicon.png" rel="shortcut icon" type="x-image/icon">
+		<title>Kontakt</title>
+	</head>
+	
+	<body>
+			<nav>
+				<div id="logo">
+					<p>M</p>
+				</div>
+					<div id="icon">
+						<ul class="nav-links">
+							<li><a href="../index.html">Startseite</a></li>
+							<li><a href="../ueber-mich/ubermich.html">Über mich</a></li>
+							<li><a href="../kontakt/kontakt.html" class="activ">Kontakt</a></li>
+							<li><a href="../galerie/galerie.html">Fotogalerie</a></li>
+						</ul>
+
+						<div class="row">
+							<input type="checkbox" id="hamburg">
+							<label for="hamburg" class="hamburg">
+								<span class="line"></span>
+								<span class="line"></span>
+								<span class="line"></span>
+							</label>
+					<nav class="topmenu">
+						  <ul>
+							  	<li><a href="../index.html">Startseite</a></li>
+							  	<li><a href="../ueber-mich/ubermich.html">Über Mich</a></li>
+								<li><a href="../kontakt/kontakt.html"  class="activ">Kontakt</a></li>
+							  	<li><a href="../galerie/galerie.html">Fotogalerie</a></li>
+						  </ul>
+		   			</nav>
+				</div>
+				</div>
+		</nav>
+		
+			<div class="content">
+				<ul>
+					<li>Telefon
+						<a id="tel" href="tel:+4361294835">0677/61294835</a>
+					</li>
+					<li>E-Mail
+						<p><a href="mailto:michael.freynschlag@sz-ybbs.ac.at" target="_blank" id="email1">michael.freynschlag@sz-ybbs.ac.at</a>
+						
+						</p>
+					</li>
+					<li>Adresse
+						<p><a href="https://goo.gl/maps/TCCw8xHhYd9R4c8n6" target="_blank" id="adresse">Atzelsdorf 34, 3372 Blindenmarkt</a></p>
+					</li>
+				</ul>
+				
+				<h2>Feedback</h2>
+				
+				<div id="formular">
+					<form id="feedback" action="mailto:michael.freynschlag@sz-ybbs.ac.at" method="post">
+						
+						<fieldset>
+							
+							<legend>Login</legend>
+
+							<input type="text" id="benutzername" name="Benutzername"  maxlength="25" placeholder="Benutzername">
+
+							<input type="password" id="password" name="Benutzername" maxlength="25" placeholder="Passwort">
+							
+						</fieldset>
+
+						<fieldset>
+							
+							<legend>Persönliche Daten</legend>
+
+							<h4>Geschlecht:</h4>
+							<p id="gender">
+							männlich
+							<input type="radio" id="gender_male" name="Geschlecht"> 
+							&nbsp;&nbsp;&nbsp;
+							weiblich
+							<input type="radio" id="gender_female" name="Geschlecht"> 
+							</p>
+
+							<h4>Geburtsdatum:</h4>
+							<input type="date" id="date" name="Geburtsdatum">
+
+							<h4>Mail-Adresse:</h4>
+							<input type="email" id="mail" name="E-Mail" >
+
+							<h4>Telefonnummer:</h4>
+							<input type="tel" id="number" name="Telefonnummer">
+
+							<h4>Postleitzahl</h4>
+							<input type="number" id="post" name="Postleitzahl">
+
+							<h4>Lieblingsfarbe:</h4>
+							<input type="color" id="colour" name="Farbe">
+
+							<h4>Lieblingsbrowser:</h4>
+							<input list="browsers" id="list">
+								<datalist id="browsers">
+									<option value="Internet Explorer">
+									<option value="Firefox">
+									<option value="Google Chrome">
+									<option value="Opera">
+									<option value="Safari">		
+								</datalist>
+
+							</fieldset>
+
+						<fieldset>
+							
+							<legend>Feedback</legend>
+
+							<h4>Wie gefällt dir diese Seite? (0=gar nicht, 10=sehr gut)</h4>
+							<p id="bewertung">0<input type="range" id="like" name="Regler" min="0" max="10" >&nbsp; 10</p>
+
+							<h4>Sonstige Anmerkungen oder Beschwerden?</h4>
+							<textarea rows="10" id="text" cols="35" placeholder="Hier kann dein Feedack stehen..."></textarea>
+
+						</fieldset>
+
+							<p><input type="checkbox" name="Checkbox" id="checkbox_AGB"> Ich habe die <a href="#">AGBs</a> gelesen und stimme diesen zu</p>
+							<p><input type="checkbox" name="Checkbox" id="checkbox"> Ich möchte den wöchentlichen Newsletter erhalten</p>
+
+							<button type="submit" id="submit" name="Abschicken">Abschicken</button>
+							<button type="reset" id="reset" name="Zurücksetzen">Zurücksetzen</button>
+						
+					</form>
+				</div>
+			
+			</div>
+	</body>
+	
+</html>

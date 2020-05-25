@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins&display=swap');
+
+body {
+	margin: 0px;
+	padding: 0px;
+	
+	background-image: url(../img/hintergrund.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	font-family: 'Poppins', sans-serif;
+}
+
+nav {
+	width: 100%;
+	height: 100px;
+	top: 0px;
+	position: fixed;
+	box-shadow: 2px 2px 5px grey;
+	
+	background-color: white;
+	z-index: 1;
+
+}
+#logo{
+	position: fixed;
+}
+#logo p  {
+	float: left;
+	font-size: 5em;
+	margin: 5px;
+	margin-left: 60px;
+	line-height: 1;
+	font-family: 'Kaushan Script', sans-serif;
+}
+			.nav-links {
+				float: right;
+				justify-content: space-around;
+				width: auto;
+				margin-right: 70px;
+				margin-top: 30px;
+			}
+
+			.nav-links a {
+				text-decoration: none;
+				letter-spacing: 3px;
+				font-size: 25px;
+				margin: 10px;
+				font-size: 32px;
+				color: black;
+
+			}
+			.nav-links a:hover {
+				font-weight: bold;
+				color: grey;
+			}
+			.nav-links li {
+				list-style: none;
+				display: inline;
+				margin: 25px;
+			}
+
+
+.content {
+	width: 60%;
+	height: auto ;
+	margin: auto;
+	top: 130px;
+	left: 20%; 
+	position: absolute;
+	padding: 5px;
+	border-radius: 20px;
+	
+	
+	background-color: white;
+}
+img {
+	border-radius: 20px;
+	float: right;
+	margin-top: 15px;
+	margin-left: 25px;
+	margin-right: 10px;
+	transition: all 0.4s ease-out;
+}
+h1	{
+	font-size: 2.5em;
+	margin-bottom: 20px;
+	margin-left: 15px;
+
+}
+h2 {
+	float: right;
+	margin-right: 25%;
+	font-size: 2em;
+	margin-bottom: 5px;
+	margin-top: 7px;
+}
+h3 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 5px;
+	font-size: 30px;
+	margin-left: 25px;
+}
+p {
+	margin-bottom: 15px;
+	margin-top: 10px;
+	margin-left: 45px;
+	font-size: 25px;	
+}
+a {
+	margin-bottom: -70px;
+	margin-top: -40px;
+	margin-left: 45px;
+	font-size: 25px;
+	text-decoration: none;
+
+}
+a:hover {
+	font-weight: bold;
+}
+.nav-links a.activ {
+	font-weight: bold;
+	pointer-events: none;
+}
+
+.row {
+	visibility: hidden;
+}
+.topmenu { 
+	visibility: hidden;
+}
+
+@media screen and (max-width:1350px) {
+	 
+	.nav-links {
+		visibility: hidden;
+		position: absolute;
+		margin-right: 0px;
+		width: 45%;
+		right:  0px;
+		height: 50%;
+		top: 67px;
+		background-color: rgba(250, 250, 250, 0.8);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.nav-links {
+		opacity: 1;
+	}
+	
+	.row {
+		visibility: visible;
+	}
+	.topmenu {
+		visibility: visible;
+	}
+	
+				label.hamburg
+			{ 
+				display: block;
+				background: #555; width: 75px; height: 50px; 
+				position: relative; 
+				float: right;
+				margin-top: 25px;
+				margin-right: 15px;
+				border-radius: 4px; 
+			}
+
+			input#hamburg {display:none}
+			
+			.line
+			{ 
+				position: absolute; 
+				left:10px;
+				height: 4px; width: 55px; 
+				background: #fff; border-radius: 2px;
+				display: block; 
+				transition: 0.5s; 
+				transform-origin: center; 
+			}
+
+			.line:nth-child(1) { top: 12px; }
+			.line:nth-child(2) { top: 24px; }
+			.line:nth-child(3) { top: 36px; }
+
+			#hamburg:checked + .hamburg .line:nth-child(1)
+			{
+				transform: translateY(12px) rotate(-45deg);
+			}
+
+			#hamburg:checked + .hamburg .line:nth-child(2)
+			{
+				opacity:0;
+			}
+
+			#hamburg:checked + .hamburg .line:nth-child(3)
+			{
+				transform: translateY(-12px) rotate(45deg);
+			}
+			
+			nav.topmenu 
+			{ 
+				
+				height: auto; 
+				max-height:0; 
+				overflow: hidden;
+				background-color: (255, 255, 255, 0.8);
+				float: right;
+				margin-top:;
+				width:100%;
+				transition: all 0.5s;
+			}
+			
+			nav.topmenu ul { padding-left: 1em;}
+			nav.topmenu ul li { list-style-type: none; color: white; padding-top: 1ex; padding-bottom: 1ex; padding: 5ex; text-align: center;  }
+			nav.topmenu ul li:last-child{border-bottom: 0;}
+			nav.topmenu ul li a { color: black; text-decoration: none; display: block; font-size: 2em; }
+		
+			#hamburg:checked + .hamburg  + nav.topmenu {max-height: 600px;}
+	
+	a.activ {
+		font-weight: bold;
+		pointer-events: none;
+	}
+	
+	a:hover {
+		font-weight: bold;
+		color: deepskyblue;
+		
+	}
+	
+	nav.topmenu a:hover {
+		font-weight: bold;
+		color: deepskyblue;
+		
+	}
+	
+
+}
+@media screen and (max-width: 1450px) {
+	
+	img {
+	border-radius:20px;
+	}
+	
+	.content {
+	width: 90%;
+	height: auto ;
+	margin: auto;
+	margin-top: 50px;
+	padding: 5px;
+	border-radius: 20px;
+	position: absolute;
+	left: 5%;
+	background-color: white;
+
+	}
+	
+}
+
+@media screen and (max-width: 950px) {
+	
+	.content {
+		width: 57%;
+		height: auto ;
+		margin: auto;
+		margin-top: 50px;
+		left: 22%;
+		padding: 5px;
+		border-radius: 20px;
+	}
+	img {
+		float: left;
+		margin-left: 5px;
+		border-radius: 20px;
+	}
+	h2 {
+		float: left;
+		margin-right: 60%;
+		font-size: 2em;
+		margin-bottom: 52px;
+		margin-top: 30px;
+	}
+	h3 {
+		margin-top: 100px;
+		font-size: 30px;
+		margin-left: 10px;
+	}
+
+	
+}
+
+@media screen and (max-width: 850px) {
+	
+	.content {
+		width: 65%;
+	}
+	img {
+		float: left;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	
+	.content {
+		width: 74%;
+		
+	}
+
+}
+
+@media screen and (max-width: 650px) {
+	
+	.content {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	
+	.content {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	
+	.content {
+		width: auto;
+	}
+	img {
+		width: 425px;
+		height: auto;
+	}
+	
+@media screen and (max-width: 440px) {
+	
+	.content {
+		width:70%;
+	}
+	img {
+		width: 275px;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	
+	.content {
+		width:70%;
+
+	}
+	img {
+		width: 250px;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 340px) {
+	
+	.content {
+		width:70%;
+
+	}
+	img {
+		width:200px;
+		height: auto;
+	}
+}
+		
+
+	
+
+
+
