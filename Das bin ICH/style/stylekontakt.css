@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins&display=swap');
+
+body {
+	margin: 0px;
+	padding: 0px;
+	
+	background-image: url(../img/hintergrund.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	font-family: 'Poppins', sans-serif;
+}
+
+nav {
+	width: 100%;
+	height: 100px;
+	top: 0px;
+	position: fixed;
+	box-shadow: 2px 2px 5px grey;
+	
+	background-color: white;
+	z-index: 1;
+}
+
+#logo p {
+	float: left;
+	font-size: 5em;
+	margin: 5px;
+	margin-left: 60px;
+	line-height: 1;
+	font-family: 'Kaushan Script', sans-serif;
+}
+.nav-links {
+	float: right;
+	justify-content: space-around;
+	width: auto;
+	margin-right: 70px;
+	margin-top: 30px;
+}
+
+.nav-links a {
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-size: 25px;
+	margin: 10px;
+	font-size: 32px;
+	color: black;
+	
+}
+.nav-links a:hover {
+	font-weight: bold;
+	color: grey;
+}
+.nav-links li {
+	list-style: none;
+	display: inline;
+	margin: 25px;
+}
+
+.content {
+	width: 60%;
+	height: auto;
+	margin: auto;
+	margin-top: 130px;
+	left: 20%;
+	padding: 5px;
+	border-radius: 20px;
+	overflow: hidden;
+	position: absolute;
+	
+	background-color:  white;
+}
+
+.content ul {
+	list-style: none;
+}
+
+.content ul li {
+	font-size: 50px;
+}
+
+.content ul li p {
+	font-size: 40px;
+	margin-left: 55px;
+}
+
+.row {
+	visibility: hidden;
+}
+.topmenu {
+	visibility: hidden;
+}
+a.activ {
+	font-weight: bold;
+	pointer-events: none;
+}
+
+#email2 {
+	visibility: hidden;
+}
+
+h2{
+	margin-left: 43%;
+	font-size: 2em;
+	margin-bottom: 10px;
+	
+}
+
+legend{
+	margin-top: 2px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	font-size: 1.5em;
+}
+
+h4{
+	margin-bottom: 0;
+	margin-left: 15px;
+}
+
+#formular{
+	width: 60%;
+	margin-left: 20%;
+
+}
+#benutzername{
+	margin: 10px;
+	font-size: 20px;
+}
+#password{
+	margin: 10px;
+	font-size: 20px;
+}
+#gender{
+	margin-top: 5px;
+	margin-left: 25px;
+}
+
+#date{
+	margin-left: 15px;
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+#mail{
+	margin-left: 15px;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+#number{
+	margin-left: 15px;
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+#post{
+	margin-left: 15px;
+	margin-top: 10px;
+	font-size: 16px;
+}
+#colour{
+	margin-left: 15px;
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+#browsers{
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+#like{
+	margin-left: 15px;
+	margin-top: 10px;
+}
+#list{
+	margin-left: 15px;
+	margin-top: 10px;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+#bewertung{
+	font-size: 20px;
+	margin-left: 15px;
+}
+
+#text{
+	margin-left: 15px;
+	margin-top: 10px;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+#checkbox_AGB{
+	margin-left: 15px;
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+#checkbox{
+	margin-left: 15px;
+	margin-top: 10px;
+	font-size: 16px;
+}
+#submit{
+	margin-left: 15px;
+	margin-top: 10px;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+	
+#reset{
+	margin-left: 15px;
+	margin-top: 10px;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+@media screen and (max-width:1350px) {
+	
+	.nav-links {
+		visibility: hidden;
+		position: absolute;
+		margin-right: 0px;
+		width: 45%;
+		right:  0px;
+		height: 600px;
+		top: 67px;
+		background-color: rgba(250, 250, 250, 0.8);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.nav-links {
+		opacity: 1;
+	}
+	.row {
+		visibility: visible;
+	}
+	.topmenu {
+		visibility: visible;
+	}
+	
+				label.hamburg
+			{ 
+				display: block;
+				background: #555; width: 75px; height: 50px; 
+				position: relative; 
+				float: right;
+				margin-top: 25px;
+				margin-right: 15px;
+				border-radius: 4px; 
+			}
+
+			input#hamburg {display:none}
+			
+			.line
+			{ 
+				position: absolute; 
+				left:10px;
+				height: 4px; width: 55px; 
+				background: #fff; border-radius: 2px;
+				display: block; 
+				transition: 0.5s; 
+				transform-origin: center; 
+			}
+
+			.line:nth-child(1) { top: 12px; }
+			.line:nth-child(2) { top: 24px; }
+			.line:nth-child(3) { top: 36px; }
+
+			#hamburg:checked + .hamburg .line:nth-child(1)
+			{
+				transform: translateY(12px) rotate(-45deg);
+			}
+
+			#hamburg:checked + .hamburg .line:nth-child(2)
+			{
+				opacity:0;
+			}
+
+			#hamburg:checked + .hamburg .line:nth-child(3)
+			{
+				transform: translateY(-12px) rotate(45deg);
+			}
+			
+			nav.topmenu 
+			{ 
+				
+				height: auto; 
+				max-height:0; 
+				overflow: hidden;
+				background-color: (255, 255, 255, 0.8);
+				float: right;
+				margin-top:;
+				width:100%;
+				transition: all 0.5s;
+			}
+			
+			nav.topmenu ul { padding-left: 1em;}
+			nav.topmenu ul li { list-style-type: none; color: white; border-bottom: 1px dotted white; padding-top: 1ex; padding-bottom: 1ex; padding: 3ex; text-align: center;  }
+			nav.topmenu ul li:last-child{border-bottom: 0;}
+			nav.topmenu ul li a { color: black; text-decoration: none; display: block; font-size: 2em; }
+		
+			#hamburg:checked + .hamburg  + nav.topmenu {max-height: 600px;}
+	
+	a.activ {
+		font-weight: bold;
+		pointer-events: none;
+	}
+	
+	nav.topmenu a:hover {
+		font-weight: bold;
+		color: deepskyblue;
+		
+	}
+	
+}
+
+@media screen and (max-width:900px) {
+	
+	.content #tel {
+		font-size: 27px;
+	}
+	
+	.content #adresse {
+		font-size: 28px;
+	}
+	
+	#formular{
+		width: auto;
+		margin: 0;
+	}
+}
